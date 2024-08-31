@@ -39,32 +39,45 @@
 
       </nav>
       <section class="header">
-        <div class="left-side"></div>
-        <div class="imagenes-juntas">
-          <img src="/images/image-product-1-thumbnail.jpg" alt="">
-          <img src="/images/image-product-2-thumbnail.jpg" alt="">
-          <img src="/images/image-product-3-thumbnail.jpg" alt="">
-          <img src="/images/image-product-4-thumbnail.jpg" alt="">
+        <div class="left-side">
+          <div class="whole-img">
+            
+          </div>
+          <div class="imagenes-juntas">
+            <img src="/images/image-product-1-thumbnail.jpg" alt="" class="square">
+            <img src="/images/image-product-2-thumbnail.jpg" alt="" class="square">
+            <img src="/images/image-product-3-thumbnail.jpg" alt="" class="square">
+            <img src="/images/image-product-4-thumbnail.jpg" alt="" class="square">
+          </div>
         </div>
         <div class="right-side">
-          <h1>Sneaker Company</h1>
-          <h2>Fall Limited Edition Sneakers</h2>
-  
-          <p>
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything the
-          weather can offer.
-          </p>
-  
-          <h3 id="actual-price">$125.00</h3>
-          <h4 id="discount">50%</h4>
-          <h5 id="previous-price">$250.00</h5>
-    
-          <button id="minus-btn"><img src="/images/icon-minus.svg" alt=""></button>
-          <h6 id="contador">0</h6>
-          <button id="plus-btn"><img src="/images/icon-plus.svg" alt=""></button>
-          <button><i class="fa-solid fa-bag-shopping"></i>Add to bag</button></section>
-        
+          <div class="right-side-container">
+            <div class="text-box">
+              <h1>Sneaker Company</h1>
+              <h2>Fall Limited Edition <br>Sneakers</h2>
+      
+              <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand everything the
+              weather can offer.
+              </p>
+            </div>
+            
+            <div class="price-box">
+              <h3 id="actual-price" ">$125.00</h3>
+              <h4 id="discount" class="square">50%</h4>
+              <h5 id="previous-price">$250.00</h5>
+            </div>
+            
+            <div class="botones">
+              <button id="minus-btn" class="number-btn"><img src="/images/icon-minus.svg" alt=""></button>
+              <h6 id="contador">0</h6>
+              <button id="plus-btn" class="number-btn"><img src="/images/icon-plus.svg" alt=""></button>
+              <button id="add-to-bag-btn" class="add-to-bag-btn square"><i class="fa-solid fa-bag-shopping fa-xl"></i>Add to bag</button></section>
+            </div>
+          </div>
+          
+          
         </div>
       </section>
       
@@ -72,7 +85,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Raul Almonte</a>.
     </div>
   </body>
 </html>
