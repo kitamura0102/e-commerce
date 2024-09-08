@@ -88,7 +88,6 @@ nav a:hover{
     gap: 30px;
 }
 .bag{
-    color: var(--orange-color);
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -108,6 +107,7 @@ nav a:hover{
     align-items: center;
     height: 85vh;
     flex-wrap: wrap;
+    margin-top: 23px;
 }
 /* .left-side */
 .left-side{
@@ -190,21 +190,27 @@ h5{
 .botones{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .number-btn{
     border: none;
     background-color: transparent;
-    
-    
-}
-.number-btn img{
-    width: 15px;
     cursor: pointer;
 }
-#contador{
-    margin: 25px 40px;
+.number-btn img{
+    width: 20px;
+    
+    
 }
-
+.contador{
+    margin: 25px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.number-of-items-added-to-bag{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 .add-to-bag-btn{
     background-color: var(--orange-color);
     width: 50%;
@@ -213,6 +219,7 @@ h5{
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 700;
+    padding: 20px 0;
 }
 
 .add-to-bag-btn:hover{
@@ -236,3 +243,75 @@ h5{
   .attribution a {
     color: var(--orange-color);
   }
+
+
+
+.bags{
+    position: relative;
+    display: inline-block;
+}
+#extra-number{
+    color: var(--orange-color);
+    position: absolute;
+    top: -15px;
+    right: 1px;
+    color: var(--orange-color);
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.shopping-cart{
+    background-color: var(--light-grayish-blue);
+    width: 380px;
+    height: 170px;
+    position: absolute;
+    top: 40px;
+    left: -130px;
+    border-radius: 15px;
+    display: none;
+    padding: 20px;
+    
+}
+.shopping-cart h6{
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: solid var(--orange-color) ;
+}
+.empty{
+    display: block;
+    color: var(--grayish-blue);
+    font-size: 1.2rem;
+    user-select: none;
+}
+.shopping-cart-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.total-amount{
+    margin: 0 auto;
+}
+.shopping-cart img{
+    width: 70px;
+}
+.trash{
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.trash-can{
+    color: var(--orange-color);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}

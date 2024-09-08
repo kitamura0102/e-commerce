@@ -33,7 +33,18 @@
           <li><a href="">Contact</a></li>
         </ul>
         <div class="bag-avatar">
-          <button class="bag" id="bag"><i class="fa-solid fa-bag-shopping  fa-2xl" ></i></button>
+          <div class="bags">
+            <span id="extra-number"></span>
+            <button class="bag" id="bag"><i class="fa-solid fa-bag-shopping  fa-2xl" ></i></button>
+            <div class="shopping-cart" id="shopping-cart">
+              <h6>Cart</h6>
+              <span class="line"></span>
+              <div class="shopping-cart-items" id="shopping-cart-items">
+                <p class="empty" id="empty">Cart is Empty</p>
+              </div>
+              
+            </div>
+          </div>
           <img src="/images/image-avatar.png" alt="" class="avatar" id="avatar">
         </div>
 
@@ -64,14 +75,14 @@
             </div>
             
             <div class="price-box">
-              <h3 id="actual-price" ">$125.00</h3>
-              <h4 id="discount" class="square">50%</h4>
-              <h5 id="previous-price">$250.00</h5>
+              <h3 id="actual-price"></h3>
+              <h4 id="discount" class="square"></h4>
+              <h5 id="previous-price"></h5>
             </div>
             
             <div class="botones">
-              <button id="minus-btn" class="number-btn"><img src="/images/icon-minus.svg" alt=""></button>
-              <h6 id="contador">0</h6>
+              <button id="minus-btn" disabled class="number-btn"><img src="/images/icon-minus.svg" alt=""></button>
+              <h6 id="contador" class="contador"></h6>
               <button id="plus-btn" class="number-btn"><img src="/images/icon-plus.svg" alt=""></button>
               <button id="add-to-bag-btn" class="add-to-bag-btn square"><i class="fa-solid fa-bag-shopping fa-xl"></i>Add to bag</button></section>
             </div>
@@ -87,5 +98,5 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Raul Almonte</a>.
     </div>
-  </body>
+<script src="/app.js"></script>  </body>
 </html>
