@@ -22,6 +22,43 @@ currentDicount.textContent = `${dicount}%`;
 PreviousPrice.textContent = `$${pastPrice}.00`;
 actualPrice.textContent = `${currentPrice}.00`;
 
+addToBagBtn.addEventListener("click", function () {
+  btnHasBeenClicked = true;
+  
+    
+  try {
+    if (count > 10) {
+      throw new Error("No puedes agregar más de 10 artículos en tu compra.");
+    }
+
+    // Este alert se ejecutará solo si no hay error
+  } catch (error) {
+    // Este alert se mostrará en caso de error
+    alert(error.message);
+  }
+
+  if (btnHasBeenClicked === true && count > 0 ) {
+    extraNumber.textContent = count;
+    empty.style.display = "none";
+    shoppingCartItems.innerHTML = `
+                <img src="/images/image-product-1-thumbnail.jpg" alt="" class="square">
+                <div class="total-amount">
+                  <p>Fall Limited Edition <br> Sneakers</p>
+                  <p  class="number-of-items-added-to-bag">${currentPrice} x ${count} = ${125 * count}</p>
+                </div>
+                <button class="trash" id="trash"><i class="fa-solid fa-trash fa-xl trash-can"></i></button>
+    `;
+    
+    const trashBtn = document.getElementById("trash");
+    trashBtn.addEventListener("click", function(){
+    shoppingCartItems.innerHTML = `<p class="empty" id="empty">Cart is Empty</p>`
+    extraNumber.textContent = ''
+    }) 
+    
+    count = 0
+    updateCount()
+  }
+});
 function updateCount() {
   contador.textContent = count;
 
@@ -51,41 +88,49 @@ bag.addEventListener("click", function () {
     }
 });
 
-addToBagBtn.addEventListener("click", function () {
-  btnHasBeenClicked = true;
-  
-    
-  try {
-    if (count > 10) {
-      throw new Error("No puedes agregar más de 10 artículos en tu compra.");
-    }
 
-    // Este alert se ejecutará solo si no hay error
-  } catch (error) {
-    // Este alert se mostrará en caso de error
-    alert(error.message);
-  }
 
-  if (btnHasBeenClicked === true && count > 0 ) {
-    extraNumber.textContent = count;
-    empty.style.display = "none";
-    shoppingCartItems.innerHTML = `
-                <img src="/images/image-product-1-thumbnail.jpg" alt="" class="square">
-                <div class="total-amount">
-                  <p>Fall Limited Edition <br> Sneakers</p>
-                  <p  class="number-of-items-added-to-bag">${currentPrice} x ${count} = ${125 * count}</p>
-                </div>
-                <button class="trash" id="trash"><i class="fa-solid fa-trash fa-xl trash-can"></i></button>
-    `;
-    count = 0
-    contador.textContent = count;
-    const trashBtn = document.getElementById("trash");
-    trashBtn.addEventListener("click", function(){
-    shoppingCartItems.innerHTML = `<p class="empty" id="empty">Cart is Empty</p>`
-    extraNumber.textContent = ''
-    }) 
-    
-  }
-});
+// carrousel
+const modal = document.getElementById("modal")
+const openImg = document.querySelectorAll(".open-img")
+const images = document.querySelectorAll(".carrousel-img")
+let currentIndex = 0;
+images[currentIndex].classList.add("active")
 
+function mostrarImagen(index){
+  images.forEach(function(image){
+    image.classList.remove("active")
+  })
+  images[index].classList.add("active")
+}
+
+function openModal(index){
+  currentIndex = index
+  mostrarImagen(currentIndex)
+  modal.style.display = "flex"
+}
+openImg.forEach(function(thumbnail, index){
+  thumbnail.addEventListener("click", function(){
+    openModal(index)
+  })
+})
+
+const nextBtn = document.getElementById("next").addEventListener("click", function(){
+  currentIndex = (currentIndex + 1) % images.length
+mostrarImagen(currentIndex)
+})
+
+
+const prevBtn = document.getElementById("prev").addEventListener("click", function(){
+  currentIndex = (currentIndex - 1 + images.length) % images.length
+  mostrarImagen(currentIndex)
+})
+const closeBtn = document.getElementById("close-btn").addEventListener("click", function(){
+  modal.style.display = "none"
+})
+window.addEventListener("click", function(event){
+if(event.target === modal){
+  modal.style.display = "none"
+}
+})
 updateCount();

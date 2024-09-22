@@ -99,7 +99,9 @@ nav a:hover{
     width: 50px;
     height: 50px;
     cursor: pointer;
+    margin: 0 auto;
 }
+
 
 .header{
     display: flex;
@@ -117,15 +119,14 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
 }
-.whole-img{
+
+#big-img{
     width: 80%;
     height: 70%;
-    background: url(/images/image-product-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
     margin-top: 30px;
     border-radius: 15px;
+    
+    
 }
 
 .left-side img{
@@ -135,7 +136,13 @@ nav a:hover{
 .left-side img:hover{
     opacity: .2;
 }
-
+.all-img{
+    width: 100%;
+    height: 100%;
+}
+.all-img img{
+    cursor: pointer;
+}
 .imagenes-juntas{
     width: 80%;
     margin: 20px 0;
@@ -314,4 +321,50 @@ h5{
     cursor: pointer;
     padding: 0;
     margin: 0;
+}
+
+
+.modal{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkBlue);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.modal-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.carrousel-img{
+    width: 700px;
+    display: none;
+}
+.carrousel-img.active{
+    display: block;
+}
+
+.modal-img button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.side{
+    width: 90px;
+    color: var(--orange-color);
+    
+    
+}
+.close-btn{
+    width: 40px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
 }
