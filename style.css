@@ -368,3 +368,7 @@ h5{
     top: 30px;
     cursor: pointer;
 }
+
+.side:hover, .close-btn:hover{
+    opacity: .8;
+}

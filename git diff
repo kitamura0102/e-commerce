@@ -1,0 +1,29 @@
+[33mcommit bcd6111ed3ef747c753afd16feb3d19c572ea0e8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: kitamura0102 <raul_almonte001@hotmail.com>
+Date:   Sun Sep 22 00:17:52 2024 -0400
+
+    Finished the JS, but missing the mediaQuery
+
+[33mcommit 3215ea6caa87135c81bf526556eab093c5ec3f56[m
+Author: kitamura0102 <raul_almonte001@hotmail.com>
+Date:   Sat Sep 7 21:19:54 2024 -0400
+
+    Created the cart modal and added a few js to it.
+
+[33mcommit e4ef5fa80a84ca313800cb443e4bc58366d8074d[m
+Author: kitamura0102 <raul_almonte001@hotmail.com>
+Date:   Sat Aug 31 00:04:35 2024 -0400
+
+    The css is almost done, just missing the @mediaQuery
+
+[33mcommit e03c62b475634139ab5f00e00f52633ace1866f1[m
+Author: kitamura0102 <raul_almonte001@hotmail.com>
+Date:   Thu Aug 29 23:46:16 2024 -0400
+
+    Made the navbar
+
+[33mcommit f6e7631680c179b21878e689a219d92fd40dc053[m
+Author: kitamura0102 <raul_almonte001@hotmail.com>
+Date:   Thu Aug 29 00:04:58 2024 -0400
+
+    Starting this new project for my portofolio

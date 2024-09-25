@@ -54,14 +54,16 @@
       <section class="header">
         <div class="left-side">
           <div class="all-img" id="all-img">
+            <div class="big-img-container" id="big-img-container">
+              <img src="/images/image-product-1.jpg"  alt="Shoes" id="big-img" class="big-img">
+
+            </div>
             
-            <img src="/images/image-product-1.jpg" class="open-img" alt="" id="big-img">
-            
-            <div class="imagenes-juntas">
-              <img src="/images/image-product-1-thumbnail.jpg" alt="" class="square open-img">
-              <img src="/images/image-product-2-thumbnail.jpg" alt="" class="square open-img">
-              <img src="/images/image-product-3-thumbnail.jpg" alt="" class="square open-img">
-              <img src="/images/image-product-4-thumbnail.jpg" alt="" class="square open-img">
+            <div class="imagenes-juntas" id="imagenes-juntas">
+              <img src="/images/image-product-1-thumbnail.jpg" alt="" class="square open-img" data-index="1">
+              <img src="/images/image-product-2-thumbnail.jpg" alt="" class="square open-img" data-index="2">
+              <img src="/images/image-product-3-thumbnail.jpg" alt="" class="square open-img" data-index="3">
+              <img src="/images/image-product-4-thumbnail.jpg" alt="" class="square open-img" data-index="4">
             </div>
           </div>
           
@@ -99,8 +101,9 @@
       
 
       <div class="modal" id="modal">
-        <svg class="close-btn" id="close-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#ff7d1a" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5
-           12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        <button style="background-color: transparent; border: none; "><svg class="close-btn" id="close-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#ff7d1a" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5
+          12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+        
         <div class="modal-img">
           <button id="prev">          
             <svg xmlns="http://www.w3.org/2000/svg" class="side leftside" viewBox="0 0 512 512"><path fill="#ff7d1a" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>

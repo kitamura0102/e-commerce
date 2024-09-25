@@ -133,4 +133,19 @@ if(event.target === modal){
   modal.style.display = "none"
 }
 })
+const bigImgContainer = document.getElementById("big-img-container")
+const imagenesJuntas = document.getElementById("imagenes-juntas")
+
+
+imagenesJuntas.addEventListener("mouseover", function(e){
+  if (e.target !== e.currentTarget) {
+     const index = e.target.getAttribute("data-index");
+     bigImgContainer.innerHTML = `<img src="/images/image-product-${index}.jpg"  alt="Shoes"  id="big-img" class="big-img"></img>`
+  }
+  
+})
+
+
+
 updateCount();
+
