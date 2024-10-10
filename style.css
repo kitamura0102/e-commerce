@@ -130,7 +130,7 @@ nav a:hover{
 }
 
 .left-side img{
-    width: 130px;
+    width: 24%;
     cursor: pointer;
 }
 .left-side img:hover{
@@ -308,7 +308,7 @@ h5{
     margin: 0 auto;
 }
 .shopping-cart img{
-    width: 70px;
+    width: 30%;
 }
 .trash{
 
@@ -342,7 +342,8 @@ h5{
     
 }
 .carrousel-img{
-    width: 700px;
+    margin: 0 auto;
+    width: 60%;
     display: none;
 }
 .carrousel-img.active{
